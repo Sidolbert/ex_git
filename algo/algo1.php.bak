@@ -1,0 +1,28 @@
+<?php
+//on crée une variable pour stocker le nbMystere et on lui assigne une valeur aléatoire obtenue via la fonction rand
+$nbMystere = rand(1, 100);
+//on boucle la question avec un while
+$reponse = -1;
+
+//boucle while : on continue de tourner tant que la condition est vérifiée
+while($reponse != $nbMystere)
+{ //si $reponse est différent de $nbMystere
+	$reponse = readline("entrez un nombre entre 1 et 100\n");
+	//condition : si elle est vérifiée on entre dans le bloc
+	//si $reponse n'est pas une valeur numérique
+	if(!is_numeric($reponse))
+	{
+		echo "entrez un nombre valide\n";
+	} 
+	else if($reponse > $nbMystere)
+	{
+		echo "essayez plus petit !\n";
+	}
+	else if($reponse < $nbMystere)
+	{ //on entre dans un else si on est pas entré dans son bloc if
+		echo "essayez plus grand !\n";
+	}
+	else{
+		echo "Bravo ! vous avez trouvé !";
+	}
+}
