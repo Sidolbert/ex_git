@@ -1,6 +1,7 @@
 <?php
 
-echo "hello PHP !\n";
+echo "on a modifié le fichier";
+echo "hello PHP le retour !\n";
 // le caractère \ permet d'activer des fonctionnalités ou de désactiver les caractères spéciaux
 echo("syntaxe alternative "); //attention aux espaces !
 
