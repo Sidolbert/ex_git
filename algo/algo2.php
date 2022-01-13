@@ -14,3 +14,4 @@ for($i=0 ; $i<=$nombre ; $i++){ // for : valeur de départ du compteur ; conditi
 //et on affiche le résultat
 echo "la somme est " . $resultat;
 echo "tchou tchou";
+echo "version encore modifiée !";
